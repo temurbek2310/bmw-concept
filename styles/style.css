@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Hind Silinguri", sans-serif;
+  src: url(../fonts/HindSiliguri-Medium.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Hind Silinguri", sans-serif;
+  src: url(../fonts/HindSiliguri-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BMW Helvetica 75";
+  src: url(../fonts/BMW\ Helvetica\ 75\ Bold.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "BMW Helvetica 75";
+  src: url(../fonts/BMW\ Helvetica\ 75\ Bold.woff2);
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 100px;
+  max-width: 1440px;
+  height: 867px;
+  background: #060606;
+  margin: 0 auto;
+}
+.container .nav {
+  padding: 60px;
+  display: flex;
+  gap: 374px;
+}
+.container .nav .list {
+  display: flex;
+  list-style-type: none;
+  gap: 96px;
+}
+.container .nav .list .list_item_link {
+  color: #FFF;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  transition: all ease 400ms;
+}
+.container .nav .list .list_item_link:hover {
+  color: red;
+  font-size: 20px;
+}
+.container .line {
+  margin-top: -55px;
+  margin-left: 53px;
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  border-radius: 0.5px;
+  background: #013861;
+  transition: all ease 300ms;
+}
+.container .line:hover {
+  width: 85px;
+  height: 2.5px;
+  background-color: red;
+}
+.container .nav_btn {
+  margin-top: -90px;
+  margin-left: 1055px;
+  border: none;
+  color: #FFF;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 137px;
+  height: 53px;
+  position: absolute;
+  border-radius: 5px;
+  opacity: 0.6000000238;
+  background: #013861;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 10px;
+}
+.container .nav_btn:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.container .nav_btn:active {
+  color: #000;
+}
+.container .nav_btn:active:after {
+  background: transparent;
+}
+.container .nav_btn:hover:before {
+  opacity: 1;
+}
+.container .nav_btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.container .main_bg1 {
+  margin-top: 38px;
+  margin-left: 50px;
+}
+.container .dots {
+  margin-top: 249px;
+  position: absolute;
+  margin-left: -1178px;
+}
+.container .main_bg2 {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: -900px;
+}
+.container .main_down {
+  gap: 200px;
+  display: flex;
+}
+.container .main_down .main_btn {
+  margin-left: 48px;
+  margin-top: 80px;
+  font-family: "Hind Siliguri" sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 5px;
+  background: #001C31;
+  width: 126px;
+  height: 35px;
+  border: none;
+  color: #FFF;
+  transition: all ease 200ms;
+}
+.container .main_down .main_btn:hover {
+  background-color: blue;
+  font-size: 18px;
+  width: 150px;
+  height: 60px;
+  color: red;
+}
+.container .main_down .wrapper {
+  margin-top: 73px;
+  display: flex;
+  gap: 166px;
+}
+.container .main_down .wrapper .title1 {
+  color: #FFF;
+  font-family: "BMW Helvetica 75";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .main_down .wrapper .text {
+  color: #FFF;
+  font-family: "BMW Helvetica 75";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */
